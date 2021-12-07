@@ -818,10 +818,25 @@ header {
   background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  color: var(--accent-color);
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon:focus,
+.modal-icon:hover {
+  fill: currentColor;
 }
 
 .modal-icon {
-  fill: black;
+  fill: #000000;
 }
 
 .form-title {
